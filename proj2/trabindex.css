@@ -1,0 +1,32 @@
+body		{		 		
+	margin:	0;				
+	padding:	0;		 		
+	background: grey ;			
+}					
+#container		{		 		
+	margin:	1em	auto;				
+	width:	1000px;				
+	background: white;			
+}
+
+#header	{
+	background: hotpink;
+}	
+
+#mainnav	{
+	background: white;
+}	
+					
+#contents		{
+	border: 2px solid;
+	width: 95%;
+	padding:auto;
+
+	float:none;		 					
+	background:pink;			
+		
+}					
+#footer		{		 		
+	clear:	both;		 		
+	background:	white;			
+}	
