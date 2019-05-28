@@ -1,1 +1,1 @@
-Desde do estilo carrossel para exibir noticias.
+Teste do estilo carrossel para exibir noticias.
