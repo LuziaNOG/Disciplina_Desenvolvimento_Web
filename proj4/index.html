@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <ul class="nav nav-pills">
+    <li class="active"><a data-toggle="pill" href="#home">Home</a></li>
+    <li><a data-toggle="pill" href="#menu1">Exercicio 02</a></li>
+    <li><a data-toggle="pill" href="#menu2">exercicio 03</a></li>
+  </ul>
+  
+  <div class="tab-content">
+    <div id="home" class="tab-pane fade in active">
+      <h3>HOME</h3>
+      <h2>Lista 3 - Segunda parte</h2>
+      
+      <hr class="featurette-divider">
+ <!-- FOOTER -->
+      <footer>
+        <p>&copy; 2018 Luzia N. &middot; <a href="#">Privacidade</a> &middot; <a href="#">Termos</a></p>
+      </footer>
+
+    </div>
+    <div id="menu1" class="tab-pane fade">
+      
+      <div class="container">
+        <h1 align="center" class="page-header">Indice de Inflação</h1>
+        <div class="table-responsive">
+          <table class="table table-striped table-bordered table-hover ">
+            <thead>
+              <tr>
+                <th >N</th>
+                <th >Indice</th>
+                <th >Mês</th>
+                <th >Valor</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>1</th>
+                <td>IPCA </td>
+                <td>FEV.17</td>
+                <td>+0,33%</td>
+              </tr>
+              <tr>
+                <th>2</th>
+                <td>IPC-PIPE</td>
+                <td>FEV.17</td>
+                <td>+0,08%</td> 
+              </tr>
+              <tr>
+                <th>3</th>
+                <td>IGP_M</td>
+                <td>FEV.17</td>
+                <td>+0,08%</td> 
+              </tr>
+              <tr>
+                <th>4</th>
+                <td>INPC</td>
+                <td>FEV.17</td>
+                <td>+0,24%</td>   
+              </tr> 
+
+
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="container">
+        &copy; 2018 - Luzia N
+      </div>
+
+    </div>
+    <div id="menu2" class="tab-pane fade">
+      
+      <div class="center"><button data-toggle="modal" data-target="#squarespaceModal" class="btn btn-primary center-block">Click para fazer seu cadastro</button></div>
+
+
+      <!-- line modal -->
+      <div class="modal fade" id="squarespaceModal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+              <h3 class="modal-title" id="lineModalLabel">Cadastro de Dados Pessoas</h3>
+            </div>
+            <div class="modal-body">
+
+              <!-- content goes here -->
+              <form>
+                <div class="form-group">
+                  <label for="nome">Nome Completo</label>
+                  <input type="text" class="form-control" id="nome" name="nome" autofocus required>
+                </div> <!-- Div Campo Nome-->
+                
+                <div class="form-group">
+                  <label for="Tel">Telefone</label>
+                  <input input type="text" class="form-control" id="Tel" name="Tel" placeholder="(00)0 0000-0000" required>
+                </div> <!-- Div Campo Telefone-->
+
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <div class="input-group">
+                    <span class="input-group-addon">@</span>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="email@exemplo.com" required>
+                  </div>
+                </div> <!-- Div Campo Email-->
+
+                <div class="form-group">
+                  <label for="cpf">CPF</label>
+                  <input type="text" class="form-control" id="cpf" name="cpf" placeholder="000.000.000-00" required>
+                </div> <!-- Div Campo CPF-->
+
+                <div class="form-group">
+                  <label for="dt_nasc">Data de Nascimento</label>
+                  <input type="date" class="form-control" id="dt_nasc" name="dt_nasc" autofocus required>
+                </div> <!-- Div Campo Data de Nascimento-->
+                
+                <button type="submit" class="btn btn-default">Submit</button>
+              </form>
+
+            </div>
+            <div class="modal-footer">
+              <div class="btn-group btn-group-justified" role="group" aria-label="group button">
+                <div class="btn-group" role="group">
+                  <button type="button" class="btn btn-default" data-dismiss="modal"  role="button">Close</button>
+                </div>
+                
+                <div class="btn-group" role="group">
+                  <button type="button" id="saveImage" class="btn btn-default btn-hover-green" data-action="save" role="button">Save</button>
+                </div>
+
+             </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        &copy; 2018 - Luzia N
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>
