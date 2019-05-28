@@ -1,0 +1,56 @@
+/*	Seletor	de	irmãos	*/	
+h2	~	p	{	
+	font-style:	italic;	
+}	
+
+/*	Seletor	de	irmão	adjacente	*/	
+h2	+	p	{	
+	color:	red;	
+}	
+
+/*	Seletor	de	filho	direto	*/	
+article	>	h1	{	
+	color:	blue;	
+}	
+
+/*	Negação	*/	
+p:not(.especial)	{	
+	color:	green;	
+}
+
+li:first-child	{	
+		color:	red;	
+}	
+	
+li:last-child	{	
+		color:	blue;	
+}	
+	
+li:nth-child(2)	{		
+	color:	green;		
+}	/*	elementos	pares	*/	
+	
+li:nth-child(2n+1)	{		
+	color:	hotpink;		
+}
+
+p:first-letter	{	
+		font-size:	200%;	
+}
+
+a:link	{color:	#696;	text-decoration:	none;	
+background-color:	transparent}	
+a:visited	{color:	#699;	text-decoration:	
+none;	background-color:	transparent}	
+a:hover	{color:	#c93;	text-decoration:	
+underline;	background-color:	transparent}	
+a:active	{	color:	#900;	text-decoration:	
+	underline;	background-color:	transparent	}
+
+a:before	{	
+	content:'[';	
+}	
+	
+a:after	{	
+	content:']';	
+}	
