@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="br">
+
+<head>
+  <meta charset="utf-8">
+  <title>Lista 04 - Questão 06</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <meta name="viewport" content="width=device-width">
+
+  <!-- Koruza.net -->
+</head>
+<body>
+
+  <nav class="navbar navbar-static-top navbar-light bg-faded">
+    <ul class="nav navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">Pagina Inicial - Questao 01 <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="questao2.html">Questão 02</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="questao3.html">Questão 03</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="questao4.html">Questão 04</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="questao5.html">Questão 05</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="questao6.html">Questão 06</a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="container marketing">
+      
+
+    <div id="1">
+      <h2>Humanidade pode emitir mais carbono do que se pensava, diz estudo</h2>
+      <p>O objetivo ambicioso de limitar o aquecimento global abaixo de 1,5 graus Celsius, previsto no Acordo de Paris, ainda está ao alcance, disseram nesta segund... </p>
+    </div>
+    <div id="2">
+      <h2>Petrobras anuncia oferta bilionária de títulos e gestora está de olho na JBS</h2>
+      <p>Petrobras anuncia oferta bilionária de títulos e gestora está de olho na JBS; recomendações e mais 10 notícias no radar </p>
+    </div>
+    <div id="3">
+      <h2>Coreia do Norte diz que mais sanções vão estimular novos planos nucleares</h2>
+      <p>De acordo com o Ministério das Relações Exteriores do país, sanções recentes impostas pelo Conselho de Segurança da ONU representam ato de hostilidade 'cruel, antiético e desumano'.</p>
+    </div>
+    <div style="display:none" id="4">
+      <h2>Erica Malunguinho é a primeira trans eleita para Assembleia Legislativa de São Paulo</h2>
+      <p>BRASÍLIA - Com 55,2 mil votos, Erica Malunguinho (PSOL) é a primeira transexual eleita deputada estadual em São Paulo . Ela tem como bandeiras o combate à homofobia e ao racismo, além de foco na pauta da educação.</p>
+    </div>
+    <div style="display:none" id="5">
+      <h2>Fone de ouvido PaMu Scroll tem visual discreto e Bluetooth 5.0</h2>
+      <p>O PaMu Scroll é um fone de ouvido sem fio com design in-ear de perfil discreto, tendo como principal concorrente os AirPods, da Apple. Os earbuds trazem Bluetooth 5.0 e resistência à água, além de bateria que promete durar até 3,5 horas – tempo que pode aumentar com o uso da case que acompanha o produto, indo até 10 horas. Os fones foram apresentados em campanha de financiamento coletivo no Indiegogo. Os earbuds chamaram a atenção do público e o projeto bateu a meta de arrecadação.</p>
+    </div>
+    <div style="display:none" id="6">
+      <h2>Objeto 'alienígena' aparece em praia dos EUA</h2>
+      <p>Um objeto achado, na última quinta-feira (4/10), em praia de Seabrook Island (Carolina do Sul, EUA) está deixando muita gente intrigada. A descoberta foi feita por integrantes do grupo ambientalista Lowcountry Marine Mammal Network (LMMN), que postou foto no Facebook do objeto no Facebook. O caso viralizou. Muitos afirmam acreditar que se trata de um pedaço de nave alienígena. </p>
+    </div>
+    <div style="display:none" id="7">
+      <h2>Free Fire Battlegrounds: 5 curiosidades sobre o game da Garena</h2>
+      <p>Free Fire Battlegrounds é um dos novos sucessos do mercado de jogos para celular. Disponível para Android e iPhone (iOS), o Battle Boyale foi lançado em 2017 e já em 2018 começou a entrar no cenário competitivo. O game coloca 50 jogadores em partidas de 10 minutos onde o objetivo é um só: recolher recursos para se manter vivo até o final. Veja a seguir algumas curiosidades sobre o novo nome dos esports mobile.</p>
+    </div>
+    <div style="display:none" id="8">
+      <h2>Primeiro professor de português na Rússia completa 80 anos</h2>
+      <p>Aos 14 anos, Anatólio Gakh deixou o Rio Grande do Sul e foi com a família para o leste europeu, mais precisamente para a antiga União Soviética. Lá, construiu a carreira como professor catedrático da Universidade de São Petersburgo e, na década de 60, ajudou a fundar o primeiro centro de estudos da língua portuguesa no país. Hoje, ao completar 80 anos, Gakh carrega o título de ser o primeiro e mais importante professor de português na Rússia. </p>
+    </div>
+    <div style="display:none" id="9">
+      <h2>Universidades privadas oferecem serviços gratuitos à população nesta semana</h2>
+      <p>A Associação Brasileira de Mantenedoras de Ensino Superior (ABMES) iniciou hoje (18) a Semana da Responsabilidade Social, que vai oferecer serviços gratuitos à população em instituições de educação superior de todo o Brasil. A iniciativa ocorre até o próximo sábado (23) em mais de 250 municípios e oferece atividades e atendimentos em áreas como saúde, educação, cultura, inclusão digital, consultoria jurídica, desporto e lazer.</p>
+    </div>
+
+    <button onclick="exibir()">Mais Noticias</button>
+
+ <hr class="featurette-divider">
+    <!-- FOOTER -->
+
+  </div><!-- /.container -->
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+
+  <script>
+  var cont = 3;
+  function mostrar(el) {
+    var display = document.getElementById(el).style.display;
+    document.getElementById(el).style.display = 'block';
+  }
+  function exibir () {
+    cont++;
+    mostrar(cont);
+  }
+  </script>
+</body>
+</html>
+

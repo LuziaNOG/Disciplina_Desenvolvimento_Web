@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+	<meta charset="utf-8">
+	<title>Lista 04  - Questão 04</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <meta name="viewport" content="width=device-width">
+
+	<!-- Koruza.net -->
+</head>
+<body>
+  
+  <nav class="navbar navbar-static-top navbar-light bg-faded">
+    <ul class="nav navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">Pagina Inicial - Questao 01 <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="questao2.html">Questão 02</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="questao3.html">Questão 03</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="questao4.html">Questão 04</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="questao5.html">Questão 05</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="questao6.html">Questão 06</a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="container marketing">
+
+   <div class="row featurette">
+    <div class="col-md-12">
+      <form class="form-inline" action="" method="post" name="imcForm" id="imcForm">
+        <div class="form-group">
+          <label for="altura">ALTURA</label>
+          <input type="text" class="form-control" id="altura"  placeholder="Digite uma altura" autofocus >
+        </div>
+        <div class="form-group">
+          <label for="peso">PESO</label>
+          <input type="text" class="form-control" id="peso" placeholder="Digite uma peso" onkeyup="calcula_imc()">
+        </div>
+        <div class="form-group">         
+          <label for="resultado">RESULTADO</label>
+          <input type="text" class="form-control" id="resultado" disabled>
+        </div>
+        
+      </form>
+
+       <p class="lead  text-justify">
+      O índice de massa corporal (IMC) método fácil e rápido para a avaliação do nível de gordura de cada pessoa, sendo, por isso, um preditor internacional de obesidade adotado pela Organização Mundial da Saúde (OMS).
+
+    </p>
+    <table class="table table-bordered">
+    <tr>
+      <th>IMC</th>
+      <th>Classificação</th>
+    </tr>
+    <tr>
+      <td>< 16</td>
+      <td>Magreza grave</td>
+    </tr>
+    <tr>
+      <td>16 a < 17</td>
+      <td>Magreza moderada</td>
+    </tr>
+    <tr>
+      <td>17 a < 18,5</td>
+      <td>Magreza leve</td>
+    </tr>
+    <tr>
+      <td>18,5 a < 25</td>
+      <td>Saudável</td>
+    </tr>
+    <tr>
+      <td>25 a < 30</td>
+      <td>Sobrepeso</td>
+    </tr>
+    <tr>
+      <td>30 a < 35</td>
+      <td>Obesidade Grau I</td>
+    </tr>
+    <tr>
+      <td>35 a < 40</td>
+      <td>Obesidade Grau II (severa)</td>
+    </tr>
+    <tr>
+      <td>> 40</td>
+      <td>Obesidade Grau III (mórbida)</td>
+    </tr>
+
+    </table>
+
+
+
+    </div>
+    
+  </div>
+
+  <hr class="featurette-divider">
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2018 Luzia N &middot; <a href="#">Privacidade</a> &middot; <a href="#">Termos</a></p>
+  </footer>
+
+</div><!-- /.container -->
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+function calcula_imc(){
+  var altura1 = document.getElementById('altura').value;
+  var altura = parseFloat(altura1.replace(',','.'));
+  var peso1 = document.getElementById('peso').value;
+  var peso = parseFloat(peso1.replace(',','.'));
+  var quadrado = (altura * altura);
+  var calculo = (peso/quadrado);  
+  document.getElementById('resultado').value = calculo.toFixed(2);    
+}
+</script>
+</body>
+</html>
+
+

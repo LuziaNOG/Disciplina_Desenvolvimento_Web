@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+	<meta charset="utf-8">
+	<title>Lista 04 - Questão 03</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <meta name="viewport" content="width=device-width">
+
+	<!-- Koruza.net -->
+</head>
+<body>
+  <nav class="navbar navbar-static-top navbar-light bg-faded">
+    <ul class="nav navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">Pagina Inicial - Questao 01 <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="questao2.html">Questão 02</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="questao3.html">Questão 03</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="questao4.html">Questão 04</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="questao5.html">Questão 05</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="questao6.html">Questão 06</a>
+      </li>
+    </ul>
+   </nav>
+  <div class="container marketing">
+
+  <div class="row featurette">
+    <div class="col-md-12">
+      <form class="form-inline" action="" method="post">
+        <div class="form-group">
+          <label for="preco">Preço</label>
+          <input type="text" class="form-control" id="preco"  placeholder="Digite um preço" onblur="calcular()" autofocus >
+        </div>
+        <div class="form-group">
+          <label for="quantidade">Quantidade</label>
+          <input type="text" class="form-control" id="quantidade" placeholder="Digite uma quantidade" onblur="calcular()">
+        </div>
+        <div class="form-group">         
+          <label for="resultado">Resultado</label>
+          <output type="text" class="form-control" id="resultado">
+        </div>
+      </form>
+    </div>
+  </div>
+
+
+  <hr class="featurette-divider">
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2018 Luzia N. &middot; <a href="#">Privacidade</a> &middot; <a href="#">Termos</a></p>
+  </footer>
+
+</div><!-- /.container -->
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+function calcular(){
+  var valor1 = parseInt(document.getElementById('preco').value, 10);
+  var valor2 = parseInt(document.getElementById('quantidade').value, 10);
+  document.getElementById('resultado').value = valor1 * valor2;
+}
+
+</script>
+</body>
+</html>
+
+
